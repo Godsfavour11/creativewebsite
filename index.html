@@ -1,0 +1,1584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creative Sprinkles | Learn. Create. Grow.</title>
+
+    <meta name="description" content="Creative Sprinkles is a creative technology learning company helping people develop practical skills in AI, automation, storytelling and web development.">
+
+    <!-- TAILWIND CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- COLOUR & FONT CONFIGURATION -->
+<script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    cream: '#FFFFFF',
+                    sand: '#F3E8FF',
+                    brown: '#5B21B6',
+                    rust: '#7C3AED',
+                    ink: '#4C1D95',
+                    muted: '#7E6A91'
+                },
+
+                fontFamily: {
+                    sans: ['ui-sans-serif', 'system-ui', 'sans-serif'],
+                    serif: ['ui-sans-serif', 'system-ui', 'sans-serif']
+                }
+            }
+        }
+    }
+</script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+
+<body class="bg-cream text-ink font-sans antialiased">
+
+
+<!-- NAVIGATION -->
+
+<nav class="sticky top-0 z-50 bg-cream/95 backdrop-blur-md border-b border-[#e8ded2]">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="flex items-center justify-between h-20">
+
+            <a href="#home" class="flex flex-col leading-none">
+
+                <span class="font-serif text-2xl font-bold tracking-tight">
+                    Creative <span class="text-rust">Sprinkles.</span>
+                </span>
+
+                <span class="text-[9px] tracking-[0.35em] mt-2 text-muted uppercase">
+                    Learn · Create · Grow
+                </span>
+
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium">
+
+                <a href="#home" class="hover:text-rust transition">Home</a>
+
+                <a href="#about" class="hover:text-rust transition">About</a>
+
+                <a href="#programs" class="hover:text-rust transition">What We Do</a>
+
+                <a href="#showcase" class="hover:text-rust transition">Student Work</a>
+
+                <a href="#contact" class="hover:text-rust transition">Contact</a>
+
+            </div>
+
+
+            <a href="#cohort"
+               class="hidden md:inline-flex bg-brown text-white px-6 py-3 rounded-full text-sm hover:bg-rust transition">
+
+                Join Cohort 2
+
+            </a>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button id="menuBtn" class="md:hidden text-2xl text-brown">
+
+                <i class="fas fa-bars"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- Mobile Menu -->
+
+        <div id="mobileMenu" class="hidden md:hidden pb-6 space-y-5 text-sm">
+
+            <a href="#home" class="block">Home</a>
+
+            <a href="#about" class="block">About Us</a>
+
+            <a href="#programs" class="block">What We Do</a>
+
+            <a href="#showcase" class="block">Student Work</a>
+
+            <a href="#contact" class="block">Contact</a>
+
+            <a href="#cohort" class="block text-rust font-semibold">
+                Register for Cohort 2 →
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- HERO SECTION -->
+
+<section id="home" class="relative overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 pt-20 pb-24 lg:pt-32 lg:pb-36">
+
+        <div class="max-w-4xl">
+
+            <p class="uppercase tracking-[0.35em] text-xs text-rust font-semibold mb-8">
+
+                A space for curious minds and creative thinkers
+
+            </p>
+
+
+            <h1 class="font-serif text-5xl sm:text-6xl lg:text-8xl leading-[1.08] tracking-tight">
+
+                Where ideas
+
+                <span class="italic text-rust">become</span>
+
+                possibilities.
+
+            </h1>
+
+
+            <p class="text-muted text-base sm:text-lg max-w-xl mt-8 leading-8">
+
+                At Creative Sprinkles, we help you explore technology,
+                develop practical digital skills and turn your ideas
+                into something meaningful.
+
+            </p>
+
+
+            <div class="flex flex-wrap gap-4 mt-10">
+
+                <a href="#cohort"
+                   class="bg-brown text-white px-8 py-4 rounded-full hover:bg-rust transition text-sm font-semibold">
+
+                    Explore Cohort 2 <i class="fas fa-arrow-right ml-2"></i>
+
+                </a>
+
+
+                <a href="#about"
+                   class="border border-brown text-brown px-8 py-4 rounded-full hover:bg-sand transition text-sm font-semibold">
+
+                    Discover Creative Sprinkles
+
+                </a>
+
+            </div>
+
+
+            <div class="mt-16 flex flex-wrap gap-10 border-t border-[#dfd3c6] pt-8">
+
+                <div>
+
+                    <p class="font-serif text-3xl text-brown">Learn.</p>
+
+                    <p class="text-xs text-muted mt-1">Build your foundation</p>
+
+                </div>
+
+
+                <div>
+
+                    <p class="font-serif text-3xl text-brown">Create with your creative mind.</p>
+
+                    <p class="text-xs text-muted mt-1">Bring ideas to life</p>
+
+                </div>
+
+
+                <div>
+
+                    <p class="font-serif text-3xl text-brown">Grow.</p>
+
+                    <p class="text-xs text-muted mt-1">Expand your possibilities</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ABOUT US -->
+
+<section id="about" class="bg-sand py-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <div>
+
+                <p class="uppercase tracking-[0.3em] text-xs text-rust font-semibold mb-5">
+
+                    A little about us
+
+                </p>
+
+
+                <h2 class="font-serif text-4xl lg:text-6xl leading-tight">
+
+                    Creativity meets
+
+                    <span class="italic text-rust">technology.</span>
+
+                </h2>
+
+            </div>
+
+
+            <div>
+
+                <p class="text-muted leading-8 mb-6">
+
+Creative Sprinkles is a CAC-registered company dedicated to empowering individuals with practical digital skills, creativity, and technology-driven knowledge.
+
+
+Our goal is to make technology accessible, nurture creativity, develop practical skills, and equip individuals with the knowledge they need to explore opportunities in today's evolving digital world.
+
+                </p>
+
+
+                <p class="text-muted leading-8 mb-6">
+
+                    We believe that learning should go beyond theory.
+                    It should inspire curiosity, encourage experimentation
+                    and give people the confidence to create things
+                    that solve real problems.
+
+                </p>
+
+
+                <p class="text-muted leading-8">
+
+                    Through our bootcamps and learning experiences,
+                    we introduce people to emerging technologies,
+                    creative tools and practical ways to use technology
+                    in their everyday lives and work.
+At Creative Sprinkles, we believe everyone has something creative to offer. We simply provide the tools, guidance, and platform to bring those ideas to life.
+                </p>
+
+
+                <a href="#programs"
+                   class="inline-flex mt-8 text-brown font-semibold border-b border-rust pb-2">
+
+                    Discover what we offer
+                    <i class="fas fa-arrow-right ml-3 mt-1"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- WHAT WE DO -->
+
+<section id="programs" class="py-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="max-w-2xl mb-16">
+
+            <p class="uppercase tracking-[0.3em] text-xs text-rust font-semibold mb-5">
+
+                What we do
+
+            </p>
+
+
+            <h2 class="font-serif text-4xl lg:text-6xl">
+
+                Skills for a world that's always evolving.
+
+            </h2>
+
+
+            <p class="text-muted leading-8 mt-6">
+
+                We explore the intersection of creativity, technology
+                and innovation through practical learning experiences.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-px bg-[#e3d7ca] border border-[#e3d7ca]">
+
+
+            <!-- AI -->
+
+            <div class="bg-cream p-9 hover:bg-white transition">
+
+                <span class="text-rust text-2xl">
+
+                    <i class="fas fa-brain"></i>
+
+                </span>
+
+
+                <h3 class="font-serif text-2xl mt-7 mb-4">
+
+                    Artificial Intelligence
+
+                </h3>
+
+
+                <p class="text-sm text-muted leading-7">
+
+                    Explore AI concepts, discover useful tools
+                    and learn how artificial intelligence can
+                    support creativity, productivity and innovation.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Automation -->
+
+            <div class="bg-cream p-9 hover:bg-white transition">
+
+                <span class="text-rust text-2xl">
+
+                    <i class="fas fa-gears"></i>
+
+                </span>
+
+
+                <h3 class="font-serif text-2xl mt-7 mb-4">
+
+                    AI & Automation
+
+                </h3>
+
+
+                <p class="text-sm text-muted leading-7">
+
+                    Discover how to automate repetitive tasks,
+                    simplify workflows and use technology
+                    to make everyday processes more efficient.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Photo Generation -->
+
+            <div class="bg-cream p-9 hover:bg-white transition">
+
+                <span class="text-rust text-2xl">
+
+                    <i class="fas fa-image"></i>
+
+                </span>
+
+
+                <h3 class="font-serif text-2xl mt-7 mb-4">
+
+                    AI Photo Generation
+
+                </h3>
+
+
+                <p class="text-sm text-muted leading-7">
+
+                    Turn creative ideas into visual content
+                    using AI-powered image generation tools
+                    and techniques.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Storytelling -->
+
+            <div class="bg-cream p-9 hover:bg-white transition">
+
+                <span class="text-rust text-2xl">
+
+                    <i class="fas fa-pen-nib"></i>
+
+                </span>
+
+
+                <h3 class="font-serif text-2xl mt-7 mb-4">
+
+                    AI Storytelling
+
+                </h3>
+
+
+                <p class="text-sm text-muted leading-7">
+
+                    Develop compelling stories, generate ideas
+                    and explore how AI can become a creative
+                    partner in storytelling.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- Web Development -->
+
+            <div class="bg-cream p-9 hover:bg-white transition">
+
+                <span class="text-rust text-2xl">
+
+                    <i class="fas fa-code"></i>
+
+                </span>
+
+
+                <h3 class="font-serif text-2xl mt-7 mb-4">
+
+                    Front-End Web Development
+
+                </h3>
+
+
+                <p class="text-sm text-muted leading-7">
+
+                    Learn the foundations of building modern,
+                    responsive websites using HTML, CSS
+                    and JavaScript.
+
+                </p>
+
+            </div>
+
+
+
+            <!-- More -->
+
+            <div class="bg-cream p-9 hover:bg-white transition">
+
+                <span class="text-rust text-2xl">
+
+                    <i class="fas fa-lightbulb"></i>
+
+                </span>
+
+
+                <h3 class="font-serif text-2xl mt-7 mb-4">
+
+                    And More 
+                    
+
+                </h3>
+
+
+                <p class="text-sm text-muted leading-7">
+
+                    Explore additional digital tools,
+                    creative techniques and productivity
+                    resources that support your growth.<br> Including physical skills like soap making.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- OUR APPROACH -->
+
+<section class="bg-[grey] text-white py-24">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+        <div class="grid lg:grid-cols-2 gap-16">
+
+            <div>
+
+                <p class="uppercase tracking-[0.3em] text-xs text-[#E8B99F] font-semibold mb-6">
+
+                    The learning experience
+
+                </p>
+
+
+                <h2 class="font-serif text-4xl lg:text-6xl leading-tight">
+
+                    More than learning.
+
+                    <span class="italic text-[#E8B99F]">It's creating.</span>
+
+                </h2>
+
+
+                <p class="text-white/70 leading-8 mt-7 max-w-lg">
+
+                    We believe that the best way to understand
+                    technology is to explore it, experiment with it
+                    and put your knowledge into practice.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="space-y-9">
+
+                <div class="flex gap-6">
+
+                    <span class="font-serif text-3xl text-[#E8B99F]">01</span>
+
+                    <div>
+
+                        <h3 class="text-xl font-semibold mb-2">Learn</h3>
+
+                        <p class="text-white/70 text-sm leading-7">
+
+                            Understand concepts, explore tools
+                            and build a strong foundation.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="flex gap-6">
+
+                    <span class="font-serif text-3xl text-[#E8B99F]">02</span>
+
+                    <div>
+
+                        <h3 class="text-xl font-semibold mb-2">Experiment</h3>
+
+                        <p class="text-white/70 text-sm leading-7">
+
+                            Explore possibilities, test ideas
+                            and discover different ways to use technology.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="flex gap-6">
+
+                    <span class="font-serif text-3xl text-[#E8B99F]">03</span>
+
+                    <div>
+
+                        <h3 class="text-xl font-semibold mb-2">Create</h3>
+
+                        <p class="text-white/70 text-sm leading-7">
+
+                            Apply what you've learned to develop
+                            practical projects and creative solutions.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="flex gap-6">
+
+                    <span class="font-serif text-3xl text-[#E8B99F]">04</span>
+
+                    <div>
+
+                        <h3 class="text-xl font-semibold mb-2">Grow</h3>
+
+                        <p class="text-white/70 text-sm leading-7">
+
+                            Build confidence and continue developing
+                            your digital skills beyond the cIncludingAsk questions where necessary. We also provide what you may need if not available to you.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- COHORT ONE SHOWCASE -->
+<section id="showcase" class="py-24">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-14">
+
+        <div>
+
+            <p class="uppercase tracking-[0.3em] text-xs text-rust font-semibold mb-5">
+                A look at what we've created
+            </p>
+
+            <h2 class="font-serif text-4xl lg:text-6xl">
+                From learning to
+                <span class="italic text-rust">doing.</span>
+            </h2>
+
+            <p class="text-muted mt-6 leading-8 max-w-xl">
+                Our first cohort brought together curious minds
+                ready to explore technology and creativity.
+                Here's a glimpse of what our students learned
+                and created along the way.
+            </p>
+
+        </div>
+
+        <span class="text-sm text-brown font-semibold">
+            COHORT 01 / STUDENT SHOWCASE
+        </span>
+
+    </div>
+
+
+    <!-- STUDENT PROJECTS -->
+
+    <div class="mb-20">
+
+        <div class="flex items-center justify-between mb-8">
+
+            <h3 class="font-serif text-3xl">
+                Student projects
+            </h3>
+
+            <span class="text-xs uppercase tracking-widest text-muted">
+                Few works designed by our students
+            </span>
+
+        </div>
+
+
+        <!-- IMAGE GRID -->
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+            <!-- IMAGE 1 -->
+
+            <div>
+
+                <div class="w-full overflow-hidden bg-sand">
+
+                    <img src="/pictures/IMG-20261025-WA0009.jpg"
+                         alt="Cohort one student project"
+                         class="w-full h-auto block hover:scale-105 transition duration-500">
+
+                </div>
+
+                <p class="text-xs text-rust mt-5 uppercase tracking-widest">
+                    Student project 01
+                </p>
+
+                <h4 class="font-serif text-xl mt-2">
+                    Meet So's work
+                </h4>
+
+            </div>
+
+
+            <!-- IMAGE 2 -->
+
+            <div>
+
+                <div class="w-full overflow-hidden bg-sand">
+
+                    <img src="/pictures/IMG-20261024-WA0072.jpg"
+                         alt="Cohort one student project"
+                         class="w-full h-auto block hover:scale-105 transition duration-500">
+
+                </div>
+
+                <p class="text-xs text-rust mt-5 uppercase tracking-widest">
+                    Student project 02
+                </p>
+
+                <h4 class="font-serif text-xl mt-2">
+                    Meet Ubongabasi Evans' work
+                </h4>
+
+            </div>
+
+
+            <!-- HIDDEN PROJECTS START HERE -->
+
+            <div id="morePictures" class="hidden contents">
+
+
+                <!-- IMAGE 3 -->
+
+                <div>
+
+                    <div class="w-full overflow-hidden bg-sand">
+
+                        <img src="/pictures/IMG-20261024-WA0070.jpg"
+                             alt="Cohort one student project"
+                             class="w-full h-auto block hover:scale-105 transition duration-500">
+
+                    </div>
+
+                    <p class="text-xs text-rust mt-5 uppercase tracking-widest">
+                        Student project 03
+                    </p>
+
+                    <h4 class="font-serif text-xl mt-2">
+                        Meet Uduakabasi Evans' work
+                    </h4>
+
+                </div>
+
+
+                <!-- IMAGE 4 -->
+
+                <div>
+
+                    <div class="w-full overflow-hidden bg-sand">
+
+                        <img src="/pictures/IMG-20261024-WA0069.jpg"
+                             alt="Cohort one student project"
+                             class="w-full h-auto block hover:scale-105 transition duration-500">
+
+                    </div>
+
+                    <p class="text-xs text-rust mt-5 uppercase tracking-widest">
+                        Student project 04
+                    </p>
+
+                    <h4 class="font-serif text-xl mt-2">
+                        Meet Myla's work
+                    </h4>
+
+                </div>
+
+
+                <!-- IMAGE 5 -->
+
+                <div>
+
+                    <div class="w-full overflow-hidden bg-sand">
+
+                        <img src="/pictures/IMG-20261024-WA0068.jpg"
+                             alt="Cohort one student project"
+                             class="w-full h-auto block hover:scale-105 transition duration-500">
+
+                    </div>
+
+                    <p class="text-xs text-rust mt-5 uppercase tracking-widest">
+                        Student project 05
+                    </p>
+
+                    <h4 class="font-serif text-xl mt-2">
+                        Meet ID's work
+                    </h4>
+
+                </div>
+
+
+                <!-- IMAGE 6 -->
+
+                <div>
+
+                    <div class="w-full overflow-hidden bg-sand">
+
+                        <img src="/pictures/file_00000000608481f5abe9df00acab7693.png"
+                             alt="Cohort one student project"
+                             class="w-full h-auto block hover:scale-105 transition duration-500">
+
+                    </div>
+
+                    <p class="text-xs text-rust mt-5 uppercase tracking-widest">
+                        Student project 06
+                    </p>
+
+                    <h4 class="font-serif text-xl mt-2">
+                        Meet Godsfavour's work
+                    </h4>
+
+                </div>
+
+
+                <!-- IMAGE 7 -->
+
+                <div>
+
+                    <div class="w-full overflow-hidden bg-sand">
+
+                        <img src="/pictures/IMG-20261030-WA0082.jpg"
+                             alt="Cohort one student project"
+                             class="w-full h-auto block hover:scale-105 transition duration-500">
+
+                    </div>
+
+                    <p class="text-xs text-rust mt-5 uppercase tracking-widest">
+                        Student project 07
+                    </p>
+
+                    <h4 class="font-serif text-xl mt-2">
+                        Meet Prisca's work
+                    </h4>
+
+                </div>
+
+
+                <!-- IMAGE 8 -->
+
+                <div>
+
+                    <div class="w-full overflow-hidden bg-sand">
+
+                        <img src="/pictures/IMG-20261024-WA0071.jpg"
+                             alt="Cohort one student project"
+                             class="w-full h-auto block hover:scale-105 transition duration-500">
+
+                    </div>
+
+                    <p class="text-xs text-rust mt-5 uppercase tracking-widest">
+                        Student project 08
+                    </p>
+
+                    <h4 class="font-serif text-xl mt-2">
+                        Meet Jane's work
+                    </h4>
+
+                </div>
+
+
+            </div>
+
+            <!-- HIDDEN PROJECTS END HERE -->
+
+        </div>
+
+
+        <!-- VIEW MORE BUTTON -->
+
+        <div class="text-center mt-12">
+
+            <button id="viewMorePicturesBtn"
+                type="button"
+                class="text-black-900 text decoration: underline px-8 py-3 hover: blue-800 transition duration-300">
+
+                View More Photos
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+
+        <!-- STUDENT VIDEOS -->
+<section class="py-16 px-5 md:px-10 bg-white">
+
+    <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-12">
+            <p class="text-purple-700 uppercase tracking-widest text-xs mb-3">
+                Student Experiences
+            </p>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+                Hear From Our Students
+            </h2>
+
+            <p class="text-gray-500 mt-3">
+                Watch our students work.
+            </p>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+
+            <!-- VIDEO 1 -->
+            <div class="w-full">
+                <video controls playsinline preload="metadata"
+                       class="w-full h-auto block bg-black rounded-xl">
+                    <source src="videos/VID-20261030-WA0080.mp4"
+                            type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+
+                <p class="font-medium text-purple-800 mt-4">
+                Watch Uduak's work
+                </p>
+            </div>
+
+
+            <!-- VIDEO 2 -->
+            <div class="w-full">
+                <video controls playsinline preload="metadata"
+                       class="w-full h-auto block bg-black rounded-xl">
+                    <source src="/videos/VID-20261030-WA0079.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+
+                <p class="font-medium text-purple-800 mt-4">
+                    Watch Adebiyi's work
+                </p>
+            </div>
+
+   <!-- HIDDEN VIDEOS START HERE -->
+        <div id="moreVideos" class="hidden contents">
+
+            <!-- VIDEO 3 -->
+            <div class="w-full">
+                <video controls playsinline preload="metadata"
+                       class="w-full h-auto block bg-black rounded-xl">
+                    <source src="/videos/VID-20261030-WA0075.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+
+                <p class="font-medium text-purple-800 mt-4">
+                    Inside the learning experience, watch Prisca's work </p>
+            </div>
+
+
+            <!-- VIDEO 4 -->
+            <div class="w-full">
+                <video controls playsinline preload="metadata"
+                       class="w-full h-auto block bg-black rounded-xl">
+                    <source src="/videos/VID-20261030-WA0072.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+
+                <p class="font-medium text-purple-800 mt-4">
+                    Watch Ubong's work
+                </p>
+            </div>
+
+
+            <!-- VIDEO 5 -->
+            <div class="w-full md:col-span-2 md:max-w-2xl md:mx-auto">
+                <video controls playsinline preload="metadata"
+                       class="w-full h-auto block bg-black rounded-xl">
+                    <source src="/videos/VID-20261030-WA0077.mp4" type="video/mp4">
+                    Your browser does not support video playback.
+                </video>
+
+                <p class="font-medium text-purple-800 mt-4">
+                    More student experiences, hear from chisom
+                </p>
+            </div>
+
+<!-- HIDDEN VIDEOS END HERE -->
+ </div>
+
+    <!-- VIEW MORE BUTTON -->
+    <div class="text-center mt-10">
+        <button id="viewMoreBtn"
+            class=" text-black-900 text-decoration: underline px-8 py-3 hover:blue transition">
+            View More Videos
+        </button>
+    </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- TESTIMONIALS CAROUSEL --><section class="bg-sand py-24 overflow-hidden"><div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+    <!-- HEADER -->
+
+    <div class="max-w-2xl mb-12">
+
+        <p class="uppercase tracking-[0.3em] text-xs text-rust font-semibold mb-5">
+            Words from our learners
+        </p>
+
+        <h2 class="font-serif text-4xl lg:text-6xl">
+            Every learning journey has a story.
+        </h2>
+
+    </div>
+
+
+    <!-- SLIDER -->
+
+    <div class="relative">
+
+        <div class="overflow-hidden">
+
+            <div id="testimonial-track"
+                 class="flex transition-transform duration-700 ease-in-out">
+
+
+                <!-- TESTIMONIAL 1 -->
+
+                <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] px-3">
+
+                    <div class="bg-cream p-8 h-full">
+
+                        <i class="fas fa-quote-left text-rust text-xl mb-6"></i>
+
+                        <p class="text-muted leading-8 text-sm">
+
+                            It was novel, exciting.
+                            I learned new things. The class was friendly and encouraged participation.
+                            The concepts were made easy to grasp.
+                            The assignments made practice necessary and further reinforced the knowledge.
+
+                            Overall 10/10⭐
+
+                        </p>
+
+                        <div class="border-t border-[#e3d7ca] mt-8 pt-5">
+
+                            <p class="font-semibold">Ubongabasi Evans</p>
+
+                            <p class="text-xs text-muted mt-1">Cohort 1 participant</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TESTIMONIAL 2 -->
+
+                <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] px-3">
+
+                    <div class="bg-cream p-8 h-full">
+
+                        <i class="fas fa-quote-left text-rust text-xl mb-6"></i>
+
+                        <p class="text-muted leading-8 text-sm">
+
+                            The class was very insightful. The coach was very engaging and I loved the assignments most because they gave me the opportunity to practice what was being taught.
+
+                            Overall, it was 100% worth it.
+
+                        </p>
+
+                        <div class="border-t border-[#e3d7ca] mt-8 pt-5">
+
+                            <p class="font-semibold">Uduakabasi Evans</p>
+
+                            <p class="text-xs text-muted mt-1">Cohort 1 participant</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TESTIMONIAL 3 -->
+
+                <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] px-3">
+
+                    <div class="bg-cream p-8 h-full">
+
+                        <i class="fas fa-quote-left text-rust text-xl mb-6"></i>
+
+                        <p class="text-muted leading-8 text-sm">
+
+                            Before joining the Creative Sprinkles AI Masterclass, I knew very little about Artificial Intelligence. I only used AI apps on my phone for search, completely unaware of the amazing possibilities.
+
+                            Out of sheer curiosity, I joined the class. In just five days, I learned to create stunning images and beautiful videos. My perspective on AI has completely changed!
+
+                            The class was so detailed, practical, and impactful that it never felt like a free class.
+
+                            Thank you, Creative Sprinkles, for sharing your knowledge so generously and opening my eyes to a whole new world of possibilities.
+
+                            This is only the beginning of my AI journey, and I'm excited about what lies ahead!
+
+                        </p>
+
+                        <div class="border-t border-[#e3d7ca] mt-8 pt-5">
+
+                            <p class="font-semibold">Mrs Sowoolu Michelle</p>
+
+                            <p class="text-xs text-muted mt-1">Cohort 1 participant</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TESTIMONIAL 4 - EDITABLE -->
+
+                <div class="testimonial-slide min-w-full md:min-w-[50%] lg:min-w-[33.333%] px-3">
+
+                    <div class="bg-cream p-8 h-full">
+
+                        <i class="fas fa-quote-left text-rust text-xl mb-6"></i>
+
+                        <p class="text-muted leading-8 text-sm">
+
+                        The masterclass is an eye opener to alot of opportunities using AI tools. Although I'm already in the field the training gave me much more unsights and how I can maneuver things and get good results.<br> The training was a great one and I really benefited.<br> If there's anyone that really wants to know about AI then I would recommend this class for the person.
+
+                        </p>
+
+                        <div class="border-t border-[#e3d7ca] mt-8 pt-5">
+
+                            <p class="font-semibold">Adebiyi Mriacle</p>
+
+                            <p class="text-xs text-muted mt-1">Cohort 1 participant</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div> 
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <div class="flex items-center justify-between mt-10">
+
+            <p class="text-xs uppercase tracking-widest text-muted">
+                Learner experiences
+            </p>
+
+            <div class="flex items-center gap-4">
+
+                <button id="testimonial-prev"
+                        class="w-12 h-12 border border-rust text-rust hover:bg-rust hover:text-white transition duration-300 rounded-full"
+                        aria-label="Previous testimonials">
+
+                    <i class="fas fa-arrow-left"></i>
+
+                </button>
+
+                <button id="testimonial-next"
+                        class="w-12 h-12 bg-rust text-white hover:bg-[#9f4320] transition duration-300 rounded-full"
+                        aria-label="Next testimonials">
+
+                    <i class="fas fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SLIDE INDICATORS -->
+
+        <div id="testimonial-dots"
+             class="flex justify-center gap-2 mt-8">
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<!-- COHORT 2 -->
+
+<section id="cohort" class="py-28">
+
+    <div class="max-w-6xl mx-auto px-6 lg:px-12">
+
+
+        <div class="bg-[#5B21B6] text-white p-9 md:p-16 lg:p-20 relative overflow-hidden">
+
+
+            <div class="relative z-10 max-w-3xl">
+
+
+                <p class="uppercase tracking-[0.3em] text-xs text-[#E8B99F] font-semibold mb-7">
+
+                    The next chapter begins here
+
+                </p>
+
+
+                <h2 class="font-serif text-5xl md:text-7xl leading-tight">
+
+                    Your ideas deserve
+
+                    <span class="italic text-[#D88B63]">room to grow.</span>
+
+                </h2>
+
+
+                <p class="text-white/70 leading-8 mt-7 max-w-xl">
+
+                    Cohort 2 of the Creative Sprinkles AI & Automation
+                    Bootcamp is opening its doors.
+
+                    Spend six months exploring digital skills,
+                    learning practical tools and creating projects
+                    that bring your ideas to life.
+
+                </p>
+
+
+                <div class="flex flex-wrap gap-8 mt-10 mb-10">
+
+
+                    <div>
+
+                        <p class="text-3xl font-serif text-[#E8B99F]">06</p>
+
+                        <p class="text-xs text-white/60 mt-2">Months</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="text-3xl font-serif text-[#E8B99F]">100%</p>
+
+                        <p class="text-xs text-white/60 mt-2">Online learning</p>
+
+                    </div>
+
+
+                    <div>
+
+                        <p class="text-3xl font-serif text-[#E8B99F]">01</p>
+
+                        <p class="text-xs text-white/60 mt-2">Creative journey</p>
+
+                    </div>
+
+
+                </div>
+
+
+                <a href="https://forms.gle/zG7MPdMucT5sPFZx9"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="inline-flex items-center bg-[#B65E38] text-white px-8 py-4 rounded-full hover:bg-[#D47A50] transition font-semibold text-sm">
+
+                    Register for Cohort 2
+
+                    <i class="fas fa-arrow-up-right-from-square ml-3"></i>
+
+                </a>
+
+
+                <p class="text-xs text-white/50 mt-6">
+
+                    Take the first step towards something new.
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="py-24 bg-sand">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+
+        <div class="grid lg:grid-cols-2 gap-16">
+
+
+            <div>
+
+                <p class="uppercase tracking-[0.3em] text-xs text-rust font-semibold mb-5">
+
+                    Let's connect
+
+                </p>
+
+
+                <h2 class="font-serif text-5xl lg:text-6xl leading-tight">
+
+                    Have a question?
+
+                    <span class="italic text-rust">Let's talk.</span>
+
+                </h2>
+
+
+                <p class="text-muted leading-8 mt-7 max-w-md">
+
+                    Whether you're interested in our bootcamp,
+                    have a question about our programmes or simply
+                    want to connect, we'd love to hear from you.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="space-y-8">
+
+
+                <a href="https://wa.me/2348039423270"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="flex items-center gap-5 group">
+
+                    <span class="w-12 h-12 bg-cream rounded-full flex items-center justify-center text-brown">
+
+                        <i class="fab fa-whatsapp text-xl"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <p class="text-xs text-muted uppercase tracking-widest">
+
+                            WhatsApp
+
+                        </p>
+
+                        <p class="font-semibold mt-1 group-hover:text-rust transition">
+
+                            +234 803 942 3270
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+
+                <a href="mailto:creativesprinkles2006@gmail.com"
+                   class="flex items-center gap-5 group">
+
+                    <span class="w-12 h-12 bg-cream rounded-full flex items-center justify-center text-brown">
+
+                        <i class="fas fa-envelope text-xl"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <p class="text-xs text-muted uppercase tracking-widest">
+
+                            Email
+
+                        </p>
+
+                        <p class="font-semibold mt-1 group-hover:text-rust transition">
+
+                            Send us an email
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+
+
+
+
+
+                <a href="https://chat.whatsapp.com/FkMglpDjuoh2f6PtvgHj2r?s=cl&p=a&mlu=4&ilr=4&iam=2"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="flex items-center gap-5 group">
+
+                    <span class="w-12 h-12 bg-cream rounded-full flex items-center justify-center text-brown">
+
+                        <i class="fas fa-users text-xl"></i>
+
+                    </span>
+
+
+                    <div>
+
+                        <p class="text-xs text-muted uppercase tracking-widest">
+
+                            Community
+
+                        </p>
+
+                        <p class="font-semibold mt-1 group-hover:text-rust transition">
+
+                            Join our WhatsApp community
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="bg-[#4C1D95] text-white pt-16 pb-8">
+
+    <div class="max-w-7xl mx-auto px-6 lg:px-12">
+
+
+        <div class="grid md:grid-cols-2 gap-12 pb-14">
+
+
+            <div>
+
+                <h2 class="font-serif text-3xl">
+
+                    Creative <span class="text-[#D88B63]">Sprinkles.</span>
+
+                </h2>
+
+
+                <p class="text-white/50 text-sm mt-5 max-w-sm leading-7">
+
+                    
+                    Join our community to stay in touch.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="md:text-right">
+
+                <p class="text-xs uppercase tracking-[0.3em] text-[#D88B63] mb-5">
+
+                    Explore
+
+                </p>
+
+
+                <div class="flex flex-wrap md:justify-end gap-6 text-sm text-white/70">
+
+                    <a href="#about" class="hover:text-white">About</a>
+
+                    <a href="#programs" class="hover:text-white">What We Do</a>
+
+                    <a href="#showcase" class="hover:text-white">Student Work</a>
+
+                    <a href="#cohort" class="hover:text-white">Join Cohort 2</a>
+
+                    <a href="#contact" class="hover:text-white">Contact</a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="border-t border-white/10 pt-7 flex flex-col md:flex-row justify-between gap-5 text-xs text-white/40">
+
+
+            <p>
+
+                © <span id="year"></span> Creative Sprinkles. All rights reserved.
+
+            </p>
+
+
+            <p>
+
+                Learn. Create. Grow.
+
+            </p>
+
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
